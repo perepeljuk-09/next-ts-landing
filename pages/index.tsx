@@ -12,6 +12,7 @@ import { Footer } from '../App/Components/Footer/Footer'
 import { SectionQuestions } from '../App/Components/SectionQuestions/SectionQuestions'
 import { SectionSteps } from '../App/Components/SectionSteps/SectionSteps'
 import styles from '../styles/Home.module.scss'
+import Star from '../App/utils/Stars/Star'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,6 +28,27 @@ export default function Home() {
           <Ellipse/>
           <Ellipse/>
           <Ellipse/>
+          <div className={styles.block__stars}>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+          </div>
         </div>
         <div className={styles.container}>
           <Header/>  
