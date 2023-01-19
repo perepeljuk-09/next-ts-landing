@@ -1,0 +1,9 @@
+@import "../../../../styles/variables.module.scss";
+
+.main__title {
+    font-size: 150px;
+    line-height: 180px;
+    font-weight: 600;
+    font-family: $font-Primary;
+    color: $color-white;
+}

@@ -1,0 +1,39 @@
+@import "../../../styles/variables.module.scss"; 
+
+.questions {
+    position: relative;
+    
+    .ellipse {
+        top: 50px;
+        right: -220px;
+        position: absolute;
+        pointer-events: none;
+        width: 356px;
+        height: 356px;
+        background: $color-ellipse;
+        filter: blur(175px);
+    }
+    &__box {
+        
+        display: flex;
+        justify-content: space-between;
+        margin-top: 56px;
+        min-height: 544px;
+        margin-bottom: 180px;
+        &__mark {
+            position: relative;
+
+            max-width: 496px;
+
+            &__photo {
+                position: relative;
+                img {
+                    position: absolute;
+                    top: -933px;
+                    left: -366px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}

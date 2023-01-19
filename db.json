@@ -11,6 +11,12 @@
       "email": "test2@gmail.com",
       "name": "testname2",
       "phone": "1434567890"
+    },
+    {
+      "email": "perepeljuk-09@mail.ru",
+      "name": "Александр",
+      "phone": "+79152287922",
+      "id": 3
     }
   ]
 }

@@ -1,0 +1,74 @@
+@import "../../../styles/variables.module.scss";
+
+.faq {
+    position: relative;
+    max-width: 703px;
+    min-height: 62px;
+    background: $color-linear-gradient-2;
+    border-radius: 5px;
+    padding: 1px;
+    margin-bottom: 24px;
+    clip-path: polygon(5% 0, 100% 0, 100% 50%, 95% 100%, 0 100%, 0 52%);
+    &::before {
+        content: "";
+        position: absolute;
+        border-radius: 5px;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        background: $color-bg;
+        clip-path: polygon(5% 0, 100% 0, 100% 50%, 95% 100%, 0 100%, 0 52%);
+    }
+    &__box {
+        display: flex;
+        overflow: hidden;
+        max-height: 62px;
+        border-radius: 5px;
+        padding: 16.5px 0 16.5px 24px;
+        background: $color-clean-10;
+        clip-path: polygon(5% 0, 100% 0, 100% 50%, 95% 100%, 0 100%, 0 52%);
+        &__content {
+            position: relative;
+            > h4 {
+                margin-bottom: 16px;
+            }
+            &__toggle {   
+                position: absolute;
+                top: -10px;
+                right: 21px;
+                color: white;
+                font-size: 35px;
+                cursor: pointer;
+                transition: all .2s ease;
+                &:hover {
+                    transition: all .2s ease;
+                    color: orange;
+                }
+            }
+        }
+    }
+    &__box.active {
+        max-height: 100%;
+        padding: 27.5px 0 27.5px 24px;
+
+    }
+    &__box__toggle {
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+        &:hover {
+            color: orange;
+        }
+    }
+}
+
+.faq.active {
+    clip-path: polygon(5% 0, 100% 0, 100% 76%, 95% 100%, 0 100%, 0 23%);
+
+    &::before {
+        clip-path: polygon(5% 0, 100% 0, 100% 76%, 95% 100%, 0 100%, 0 23%);
+    }
+    .faq__box.active {
+        clip-path: polygon(5% 0, 100% 0, 100% 76%, 95% 100%, 0 100%, 0 23%);
+    }
+
+} 

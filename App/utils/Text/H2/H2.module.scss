@@ -1,0 +1,12 @@
+@import "../../../../styles/variables.module.scss";
+
+.h2__title {
+    font-size: 72px;
+    line-height: 86px;
+    font-weight: 600;
+    font-family: $font-Primary;
+    color: $color-white;
+    max-width: 641px;
+    text-align: center;
+    margin: 0 auto;
+}

@@ -1,0 +1,17 @@
+
+.box__programms {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    .ellipse {
+        position: absolute;
+        top: 17px;
+        left: 134px;
+        width: 356px;
+        height: 356px;
+        background: #2A3E84;
+        filter: blur(175px);
+    }
+}

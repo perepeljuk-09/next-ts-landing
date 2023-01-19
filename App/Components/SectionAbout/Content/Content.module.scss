@@ -1,0 +1,26 @@
+@import "../../../../styles/variables.module.scss";
+
+.content {
+    position: relative;
+    > p {
+        max-width: 486px;
+        margin-top: 109px;
+    }
+    &__word__bg {
+        line-height: 177px;
+        position: absolute;
+        left: 106px;
+        bottom: 20px;
+        font-size: 244px;
+        font-family: $font-Primary;
+        font-weight: 600;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px rgba(157, 208, 255, 0.05);
+        transition: .2s ease;
+        cursor: default;
+    }
+    &__word__bg:hover {
+        transition: .2s ease;
+        -webkit-text-stroke: 5px rgba(25, 144, 255, 0.96);
+    }
+}

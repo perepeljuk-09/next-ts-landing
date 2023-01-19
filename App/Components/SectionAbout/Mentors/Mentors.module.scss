@@ -1,0 +1,13 @@
+
+.mentors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > h3 {
+        margin-bottom: 12px;
+    }
+    .mentors__list {
+        display: flex;
+        gap: 21px;
+    }
+}

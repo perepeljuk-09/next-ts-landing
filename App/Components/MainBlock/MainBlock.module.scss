@@ -1,0 +1,26 @@
+
+.Main__Block {
+    margin-bottom: 219px;
+    .inner__up__content {
+        display: flex;
+        align-items: center;
+        gap: 57px;
+        > p {
+            position: relative;
+            bottom: -21px;
+            max-width: 359px;
+        } 
+    }
+    .inner__down__content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-top: -24px;
+        > h3 {
+            position: absolute;
+            right: 50px;
+            bottom: -30px;
+        }
+    }
+}

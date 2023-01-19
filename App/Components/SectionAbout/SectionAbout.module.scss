@@ -1,0 +1,11 @@
+
+.about {
+    margin-bottom: 179px;
+    > h2 {
+        margin-bottom: 56px;
+    }
+    &__box {
+        display: flex;
+        gap: 17px;
+    }
+}

@@ -1,0 +1,38 @@
+
+.gallery {
+    margin-bottom: 180px;
+
+    &__box {
+        margin-top: 48px;
+        display: flex;
+        gap: 24px;
+        min-height: 674px;
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 84px;
+            max-width: 288px;
+        }
+        &__right {
+            display: flex;
+            flex-direction: column;
+            gap: 139px;
+            &__up {
+                display: flex;
+                justify-content: space-between;
+                gap: 25px;
+                &__first {
+                    max-width: 600px;
+                }
+                &__last {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 288px;
+                    gap: 19px;
+                }
+            }
+        }
+    }
+}

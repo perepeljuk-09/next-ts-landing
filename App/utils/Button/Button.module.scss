@@ -1,0 +1,30 @@
+@import '../../../styles/variables.module.scss';
+
+.btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding: 24px 0;
+    color: $color-btn-Primary;
+    font-family: $font-Secondary;
+    border-radius: 8px;
+    max-width: 288px;
+    width: 100%;
+    max-height: 72px;
+    background: $color-linear-gradient-1;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        color: $color-btn-Secondary;
+        transition: $transition-Primary;
+    }
+    &:active {
+        color: $color-white;
+    }
+    &:disabled {
+        color: $color-btn-Primary;
+        opacity: 40%;
+        cursor: auto;
+    }
+}
