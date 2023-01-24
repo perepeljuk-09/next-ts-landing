@@ -13,10 +13,31 @@ import { SectionQuestions } from '../App/Components/SectionQuestions/SectionQues
 import { SectionSteps } from '../App/Components/SectionSteps/SectionSteps'
 import styles from '../styles/Home.module.scss'
 import Star from '../App/utils/Stars/Star'
+import { useEffect } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  function fn1 () {
+    const anchors = document.querySelectorAll('a.anchor') 
+    anchors.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault()
+        const href = link.getAttribute('href')?.substring(1)
+        const scrollTarget = document.querySelector(`${href}`)
+        const targetCorsTop = scrollTarget?.getBoundingClientRect().top
+        scrollBy({
+          top: targetCorsTop,
+          behavior: 'smooth'
+        })
+      })
+    })
+  }
+
+  useEffect(() => {
+   fn1()
+  }, [])
   return (
     <>
     <Meta title='Главная' description='Описание страницы' />

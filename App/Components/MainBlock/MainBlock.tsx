@@ -15,7 +15,7 @@ const MainBlock: React.FC = () => {
                 <P1>Make UIs and websites beautiful, functional, and fast. Cover all the topics that expensive bootcamps teach (and more).</P1>
             </div>
             <div className={s.inner__down__content}>
-                <Link href={"#contact__us"}>
+                <Link className="anchor" href={"#contact__us"}>
                     <Button name="Start my career change"/>
                 </Link>
                 <H1>Developer</H1>
