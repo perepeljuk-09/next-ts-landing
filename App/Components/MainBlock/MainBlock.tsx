@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { Button } from "../../utils/Button/Button";
 import { H1 } from "../../utils/Text/H1/H1";
@@ -14,7 +15,9 @@ const MainBlock: React.FC = () => {
                 <P1>Make UIs and websites beautiful, functional, and fast. Cover all the topics that expensive bootcamps teach (and more).</P1>
             </div>
             <div className={s.inner__down__content}>
-                <Button name="Start my career change"/>
+                <Link href={"#contact__us"}>
+                    <Button name="Start my career change"/>
+                </Link>
                 <H1>Developer</H1>
                 <H3>Courses</H3>
             </div>

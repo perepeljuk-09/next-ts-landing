@@ -10,7 +10,7 @@ import s from "./SectionGallery.module.scss";
 
 const SectionGallery: React.FC = () => {
     return (
-        <div className={s.gallery}>
+        <section id="gallery" className={s.gallery}>
             <H2>Gallery</H2>
             <div className={s.gallery__box}>
                 <div className={s.gallery__box__left}>
@@ -32,7 +32,7 @@ const SectionGallery: React.FC = () => {
                     <P1>If you would like to learn web development and get a job in the tech industry, you are going to LOVE this course! Learn HTML, CSS, JavaScript, Bootstrap and more with over 15 hours of HD video tutorials! This course was designed to be extremely beginner friendly. We will begin with the very basics of HTML and build a simple web page.</P1>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

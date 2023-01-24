@@ -4,13 +4,15 @@ import Link from "next/link";
 
 const Navbar: React.FC = () => {
     return (
-        <ul className={s.ul__list}>
-            <li><Link href={'/'}>About</Link></li>
-            <li><Link href={'/'}>Programs</Link></li>
-            <li><Link href={'/'}>Steps</Link></li>
-            <li><Link href={'/'}>Questions</Link></li>
-            <li><Link href={'/'}>Get in touch</Link></li>
-        </ul>
+        <nav className={s.navbar}>
+            <ul className={s.ul__list}>
+                <li><Link href={'#about'}>About</Link></li>
+                <li><Link href={'#programs'}>Programs</Link></li>
+                <li><Link href={'#steps'}>Steps</Link></li>
+                <li><Link href={'#questions'}>Questions</Link></li>
+                <li><Link href={'#contact__us'}>Get in touch</Link></li>
+            </ul>
+        </nav>
     )
 }
 export {Navbar};

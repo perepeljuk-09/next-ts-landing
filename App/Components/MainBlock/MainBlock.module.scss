@@ -17,6 +17,9 @@
         align-items: center;
         gap: 24px;
         margin-top: -24px;
+        > a {
+            display: contents;
+        }
         > h3 {
             position: absolute;
             right: 50px;

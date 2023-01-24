@@ -7,7 +7,7 @@ import s from "./SectionAbout.module.scss";
 
 const SectionAbout: React.FC = () => {
     return (
-        <section className={s.about}>   
+        <section id="about" className={s.about}>   
             <H2>About Us</H2>
             <div className={s.about__box}>
                 <Mentors/> 

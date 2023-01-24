@@ -26,7 +26,7 @@ const SectionSteps: React.FC = () => {
     const rightCards = stepCards.filter(card => card.stepNumber % 2 == 0 )
 
     return (
-        <section className={s.steps}>
+        <section id="steps" className={s.steps}>
             <H2>Steps</H2>
             <div className={s.steps__box}>
                 <div className={s.steps__box__left}>

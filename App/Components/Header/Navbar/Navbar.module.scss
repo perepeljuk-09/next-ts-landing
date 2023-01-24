@@ -1,8 +1,12 @@
 
 
-.ul__list {
+.navbar {
     display: flex;
-    color:  white;
-    list-style-type: none;
-    gap: 48px;
+    align-items: center;
+    .ul__list {
+        display: flex;
+        color:  white;
+        list-style-type: none;
+        gap: 48px;
+    }
 }

@@ -6,7 +6,7 @@ import s from "./SectionQuestions.module.scss";
 
 const SectionQuestions: React.FC = () => {   
     return (
-        <section className={s.questions}>
+        <section id="questions" className={s.questions}>
             <H2>Frequently Asked Questions</H2>
             <div className={s.questions__box}>
                 <Mark/>

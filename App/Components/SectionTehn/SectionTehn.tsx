@@ -6,7 +6,7 @@ import s from "./SectionTehn.module.scss";
 
 const SectionTehn: React.FC = () => {
     return (
-        <section className={s.tehn}>
+        <section id="programs" className={s.tehn}>
             <H2>Programming technologies</H2>
             <P1>By the end, you’ll have the portfolio and interview skills you need to start your new career.</P1>
             <ProgrammList/>  

@@ -67,7 +67,7 @@ const SectionReview: React.FC = () => {
     }
 
     return (
-        <section className={s.review}>
+        <section id="review" className={s.review}>
             <H2>Review</H2>
             <div className={s.review__box}>
                 <div className={s.review__info}>
