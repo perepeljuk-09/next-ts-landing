@@ -8,7 +8,6 @@
         display: flex;
         justify-content: space-between;
         min-height: 1096px;
-
         &__left {
             position: relative;
             display: flex;
@@ -26,14 +25,12 @@
                 filter: blur(175px);
             }
         }
-
         &__photo {
             img {
                 position: relative;
                 bottom: -90px;
             }
         }
-
         &__right {
             display: flex;
             flex-direction: column;
@@ -43,5 +40,81 @@
                 margin-bottom: 10px;
             }
         }
+        &__mobile {
+            display: none;
+            flex-direction: column;
+            gap: 25px;
+            width: 100%;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .steps {
+        &__box {
+            &__left {
+                gap: 119px;
+            }
+            &__right {
+                gap: 119px;
+                padding: 0 0 151px 0;
+            }
+            &__photo {
+                img {
+                    max-height: 760px;
+                    max-width: 160px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .steps {
+        margin-bottom: 110px;
+        &__box {
+            &__left {
+                gap: 63px;
+            }
+            &__right {
+                gap: 63px;
+                padding: 0 0 112px 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 828px) {
+    .steps {
+        margin-bottom: 40px;
+        &__box {
+            gap: 25px;
+            &__right {
+                padding: 0 0 250px 0;
+            }
+            &__photo {
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    .steps {
+        margin-bottom: 100px;
+        &__box {
+            min-height: 0;
+            &__left,
+            &__right,
+            &__photo {
+                display: none;
+            }
+            &__mobile {
+                display: flex;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .steps {
+        margin-bottom: 60px;
     }
 }

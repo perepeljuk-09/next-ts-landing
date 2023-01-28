@@ -7,3 +7,9 @@
     font-family: $font-Secondary;
     color: $color-white;
 }
+
+@media only screen and (max-width: 1200px) {
+    .text {
+        font-size: 12px;
+    }
+}

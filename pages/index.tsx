@@ -11,13 +11,19 @@ import { SectionGallery } from '../App/Components/SectionGallery/SectionGallery'
 import { Footer } from '../App/Components/Footer/Footer'
 import { SectionQuestions } from '../App/Components/SectionQuestions/SectionQuestions'
 import { SectionSteps } from '../App/Components/SectionSteps/SectionSteps'
-import styles from '../styles/Home.module.scss'
+import { useEffect, useState } from 'react'
+import { NavbarMenu } from '../App/utils/NavbarMenu/NavbarMenu'
 import Star from '../App/utils/Stars/Star'
-import { useEffect } from 'react'
+import styles from '../styles/Home.module.scss'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  const [showMenu, setShowMenu] = useState<boolean>(false)
+  const toggleShowMenu = () => {
+      setShowMenu(value => !value)
+  }
 
   function fn1 () {
     const anchors = document.querySelectorAll('a.anchor') 
@@ -37,11 +43,13 @@ export default function Home() {
 
   useEffect(() => {
    fn1()
-  }, [])
+   console.log('was changed')
+  }, [showMenu])
   return (
     <>
     <Meta title='Главная' description='Описание страницы' />
       <main className={styles.main}>
+      <NavbarMenu showMenu={showMenu} setShowMenu={setShowMenu}/> 
         <div className={styles.block__ellipsis}>
           <Ellipse/>
           <Ellipse/>
@@ -72,7 +80,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.container}>
-          <Header/>  
+          <Header toggleShowMenu={toggleShowMenu}/>  
           <MainBlock/>
           <SectionAbout/>
           <SectionTehn/>

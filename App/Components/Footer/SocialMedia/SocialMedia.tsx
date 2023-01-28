@@ -7,7 +7,6 @@ import inst from "./icons/inst.png";
 import Link from "next/link";
 import s from "./../Footer.module.scss";
 
-
 const SocialMedia: React.FC = () => {
     return (
             <div className={s.media}>

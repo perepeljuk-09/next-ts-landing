@@ -72,3 +72,13 @@
     }
 
 } 
+@media only screen and (max-width: 828px) {
+    .faq {
+        min-height: 56px;
+        padding: 1px;
+        margin-bottom: 20px;
+        &__box {
+            max-height: 56px;
+        }
+    }
+}

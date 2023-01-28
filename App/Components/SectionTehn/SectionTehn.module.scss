@@ -7,3 +7,21 @@
         max-width: 432px;
     }
 }
+@media only screen and (max-width: 828px) {
+    .tehn {
+        margin-bottom: 140px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .tehn {
+        margin-bottom: 100px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .tehn {
+        margin-bottom: 60px;
+        > p {
+            margin: 30px auto 20px auto;
+        }
+    }
+}

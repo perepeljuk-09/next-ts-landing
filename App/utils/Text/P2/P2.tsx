@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import s from './P2.module.scss'
 
-
 interface IP2Props {
     children: ReactNode
 }

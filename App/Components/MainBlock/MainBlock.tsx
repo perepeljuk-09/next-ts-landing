@@ -6,7 +6,6 @@ import { H3 } from "../../utils/Text/H3/H3";
 import { P1 } from "../../utils/Text/P1/P1";
 import s from "./MainBlock.module.scss";
 
-
 const MainBlock: React.FC = () => {
     return (
         <section className={s.Main__Block}>

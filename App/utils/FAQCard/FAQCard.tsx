@@ -3,7 +3,7 @@ import { P1 } from "../../utils/Text/P1/P1";
 import { H4 } from "../Text/H4/H4";
 import s from "./FAQCard.module.scss";
 
-export type FAQCardProps = {
+type FAQCardProps = {
     question: string;
     answer: string;
 }

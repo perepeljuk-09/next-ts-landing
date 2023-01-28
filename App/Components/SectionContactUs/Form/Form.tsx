@@ -43,19 +43,19 @@ const Form: React.FC = () => {
             <Controller
                 name="name"
                 control={control}
-                render={({field}) => <Input {...field} placeholder="Name"/> }
+                render={({field}) => <Input error={errors?.name?.message} {...field} placeholder="Name"/> }
             />  
             {errors?.name && <Error>{errors.name.message}</Error>}
             <Controller
                 name="phone"
                 control={control}
-                render={({field}) => <Input {...field} placeholder="Phone"/> }
+                render={({field}) => <Input error={errors?.phone?.message} {...field} placeholder="Phone"/> }
             />  
             {errors?.phone && <Error>{errors.phone.message}</Error>}
             <Controller
                 name="email"
                 control={control}
-                render={({field}) => <Input {...field} placeholder="E-mail"/> }
+                render={({field}) => <Input error={errors?.email?.message} {...field} placeholder="E-mail"/> }
             />  
             {errors?.email && <Error>{errors.email.message}</Error>}
             <Button type="submit" name='Send'/>

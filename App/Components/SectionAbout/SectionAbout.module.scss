@@ -9,3 +9,27 @@
         gap: 17px;
     }
 }
+@media only screen and (max-width: 1050px) {
+    .about {
+        margin-bottom: 140px;
+        > h2 {
+            margin-bottom: 56px;
+        }
+        &__box {
+            flex-direction: column;
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    .about {
+        margin-bottom: 100px;
+        > h2 {
+            margin-bottom: 30px;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .about {
+        margin-bottom: 60px;
+    }
+}

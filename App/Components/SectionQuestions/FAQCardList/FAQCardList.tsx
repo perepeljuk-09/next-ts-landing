@@ -1,16 +1,11 @@
 import React from "react";
 import { FAQCard } from "../../../utils/FAQCard/FAQCard";
+import { FAQCardType } from "../../../types/types";
 import s from "./../SectionQuestions.module.scss";
-
-type FAQCard = {
-    id: number;
-    question: string;
-    answer: string;
-}
 
 const FAQCardList: React.FC = () => {
 
-    const questions: FAQCard[] = [
+    const questions: FAQCardType[] = [
         {id: 1, question: 'What is the price?', answer: 'Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too.'},
         {id: 2, question: 'What is the price?', answer: 'Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too.'},
         {id: 3, question: 'What is the price?', answer: 'Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too.'},

@@ -2,9 +2,8 @@ import React from "react";
 import { SocialMedia } from "./SocialMedia/SocialMedia";
 import { CompanyList } from "./CompanyList/CompanyList";
 import { LogoAddress } from "./LogoAddress/LogoAddress";
+import { CompanyListMobile } from "./CompanyListMobile/CompanyListMobile";
 import s from "./Footer.module.scss";
-
-
 
 const Footer: React.FC = () => {
     return (
@@ -13,6 +12,7 @@ const Footer: React.FC = () => {
                 <div className={s.footer__wrapper__container}>
                     <LogoAddress/>
                     <CompanyList/>
+                    <CompanyListMobile/>
                     <SocialMedia/> 
                 </div>
             </div>

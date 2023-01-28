@@ -6,17 +6,8 @@ import lines from "./img/line.png";
 import Image from "next/image";
 import { H3 } from "../../../utils/Text/H3/H3";
 import { MentorCard } from "./MentorCard/MentorCard";
+import { MentorType } from "../../../types/types";
 import s from "./Mentors.module.scss";
-
-type MentorType = {
-    id: number;
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-    name: string;
-    description: string;
-}
 
 const Mentors: React.FC = () => {
     const mentors: MentorType[] = [

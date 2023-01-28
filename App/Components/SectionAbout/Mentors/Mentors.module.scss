@@ -6,8 +6,32 @@
     > h3 {
         margin-bottom: 12px;
     }
+    > img {
+        max-width: 100%;
+    }
     .mentors__list {
         display: flex;
         gap: 21px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .mentors {
+        > img {
+            max-width: 100%;
+        }
+        .mentors__list {
+            position: relative;
+            top: -15px;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .mentors {
+        > h3 {
+            margin-bottom: 0;
+        }
+        > img {
+            max-width: 95%;
+        }
     }
 }

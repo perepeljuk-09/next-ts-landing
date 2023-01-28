@@ -24,3 +24,57 @@
         -webkit-text-stroke: 5px rgba(25, 144, 255, 0.96);
     }
 }
+
+@media only screen and (max-width: 1672px) {
+    .content {
+        &__word__bg {
+            font-size: 200px;
+        }
+    }
+}
+@media only screen and (max-width: 1436px) {
+    .content {
+        &__word__bg {
+            font-size: 170px;
+            left: 76px;
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .content {
+        &__word__bg {
+            font-size: 160px;
+            left: 0;
+        }
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .content {
+        > p {
+            text-align: center;
+            margin: 154px auto 0 auto;
+        }
+        &__word__bg {
+            left: 250px;
+            top: 0;
+        }
+    }
+}
+@media only screen and (max-width: 828px) {
+    .content {
+        &__word__bg {
+            left: 0;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .content {
+        > p {
+            margin: 100px auto 0 auto;
+        }
+        &__word__bg {
+            font-size: 100px;
+            line-height: 100px;
+        }
+    }
+}

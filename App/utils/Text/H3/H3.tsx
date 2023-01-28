@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import s from './H3.module.scss'
 
-
 interface IH3Props {
     children: ReactNode
 }

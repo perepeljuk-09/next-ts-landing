@@ -1,15 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import steps from "./img/steps.png";
-import { StepCard } from "../../utils/StepCard/StepCard";
 import { H2 } from "../../utils/Text/H2/H2";
+import { StepsCardsBox} from "./StepsCardsBox/StepsCardsBox";
+import {StepCardType} from "../../types/types";
 import s from "./SectionSteps.module.scss";
-
-type StepCardType = {
-    stepNumber: number;
-    title: string;
-    description: string;
-}
 
 const SectionSteps: React.FC = () => {
 
@@ -30,14 +25,17 @@ const SectionSteps: React.FC = () => {
             <H2>Steps</H2>
             <div className={s.steps__box}>
                 <div className={s.steps__box__left}>
-                    {leftCards.map( card => <StepCard key={card.stepNumber} {...card} isLeft={true}/>)}
+                    <StepsCardsBox stepCards={leftCards}/>
                     <div className={s.ellipse}></div>
                 </div>
                 <div className={s.steps__box__photo}>
-                    <Image layout="intrinsic" src={steps.src} alt="steps" height={steps.height} width={steps.width}/>
+                    <Image src={steps.src} alt="steps" height={steps.height} width={steps.width}/>
                 </div>
                 <div className={s.steps__box__right}>
-                    {rightCards.map( card => <StepCard key={card.stepNumber} {...card} isLeft={false}/>)}
+                    <StepsCardsBox stepCards={rightCards}/>
+                </div> 
+                <div className={s.steps__box__mobile}>
+                    <StepsCardsBox stepCards={stepCards}/>
                 </div>
             </div>
         </section>

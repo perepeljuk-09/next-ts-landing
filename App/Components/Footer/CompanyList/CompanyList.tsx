@@ -2,7 +2,6 @@ import React from "react"
 import Link from "next/link";
 import s from "./../Footer.module.scss";
 
-
 const CompanyList: React.FC = () => {
     return (
         <div className={s.company}>

@@ -7,3 +7,19 @@
     font-family: $font-Primary;
     color: $color-white;
 }
+@media only screen and (max-width: 1200px) {
+    .h4__title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+@media only screen and (max-width: 828px) {
+    .h4__title {
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .h4__title {
+        font-size: 15px;
+    }
+}

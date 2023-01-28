@@ -1,0 +1,54 @@
+@import "../../../styles/variables.module.scss";
+
+.burger {
+    display: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 110;
+    transition: all .2s ease;
+    cursor: pointer;
+    &__btn {
+        position: relative;
+        width: 30px;
+        height: 2px;
+        background: $color-text-40;
+        transition: all .2s ease;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            width: 30px;
+            height: 2px;
+            background: $color-text-40;
+            transition: all .2s ease;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            width: 30px;
+            height: 2px;
+            background: $color-text-40;
+            transition: all .2s ease;
+        }
+    }
+    &:hover {
+        background-color: $color-clean-5;
+    }
+    &:hover &__btn,
+    &:hover &__btn::before,
+    &:hover &__btn::after {
+        transition: all .2s ease;
+        background-color: $color-white;
+    }
+}
+
+@media only screen and (max-width: 828px) {
+    .burger {
+        display: flex;
+    }
+}

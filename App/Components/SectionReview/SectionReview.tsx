@@ -10,23 +10,8 @@ import { Arrows } from "../../utils/Arrows/Arrows";
 import { H2 } from "../../utils/Text/H2/H2";
 import { H4 } from "../../utils/Text/H4/H4";
 import { P1 } from "../../utils/Text/P1/P1";
+import { reviewItem } from "../../types/types";
 import s from "./SectionReview.module.scss";
-
-type Slider = {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-}
-
-type reviewItem = {
-    id: number;
-    title: string;
-    description: string;
-    mainSlider: Slider;
-    secondSlider: Slider;
-    thirdSlider: Slider; 
-}
 
 const SectionReview: React.FC = () => {
     const firstItem: reviewItem = {id: 1, title: "Best courses ever", description: 'Good course, up to this point, still ongoing. The only downside, why I gave 4,5 stars, because the "teacher" sometimes feel like, he is lost, and takes up quite a time, to correct himself, and check back etc.',
@@ -84,21 +69,19 @@ const SectionReview: React.FC = () => {
                     </div>
                     <div className={s.slider__down__box}>
                         <div className={s.main__slider}>
-                            <Image layout="intrinsic" src={item.mainSlider.src} alt={item.mainSlider.alt} width={item.mainSlider.width} height={item.mainSlider.height}/>
+                            <Image src={item.mainSlider.src} alt={item.mainSlider.alt} width={item.mainSlider.width} height={item.mainSlider.height}/>
                         </div>
                         <div className={s.secondary__slider}>
-                            <Image layout="intrinsic" src={item.secondSlider.src} alt={item.secondSlider.alt} width={item.secondSlider.width} height={item.secondSlider.height}/>
+                            <Image  src={item.secondSlider.src} alt={item.secondSlider.alt} width={item.secondSlider.width} height={item.secondSlider.height}/>
                         </div>
                         <div className={s.secondary__slider}>
-                            <Image layout="intrinsic" src={item.thirdSlider.src} alt={item.thirdSlider.alt} width={item.thirdSlider.width} height={item.thirdSlider.height}/>
+                            <Image src={item.thirdSlider.src} alt={item.thirdSlider.alt} width={item.thirdSlider.width} height={item.thirdSlider.height}/>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     )
-
 }
-
 
 export {SectionReview};
