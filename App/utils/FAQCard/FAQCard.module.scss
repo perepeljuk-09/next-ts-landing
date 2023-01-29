@@ -9,6 +9,7 @@
     padding: 1px;
     margin-bottom: 24px;
     clip-path: polygon(5% 0, 100% 0, 100% 50%, 95% 100%, 0 100%, 0 52%);
+    cursor: pointer;
     &::before {
         content: "";
         position: absolute;
@@ -28,6 +29,7 @@
         clip-path: polygon(5% 0, 100% 0, 100% 50%, 95% 100%, 0 100%, 0 52%);
         &__content {
             position: relative;
+            cursor: auto;
             > h4 {
                 margin-bottom: 16px;
             }
@@ -49,15 +51,6 @@
     &__box.active {
         max-height: 100%;
         padding: 27.5px 0 27.5px 24px;
-
-    }
-    &__box__toggle {
-        color: white;
-        font-size: 25px;
-        cursor: pointer;
-        &:hover {
-            color: orange;
-        }
     }
 }
 

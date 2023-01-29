@@ -17,14 +17,14 @@ const FAQCard: React.FC<FAQCardProps> = ({question, answer}) => {
     }
 
     return (
-            <div className={isShow ? `${s.faq} ${s.active}`: `${s.faq}`}>
+            <div className={isShow ? `${s.faq} ${s.active}`: `${s.faq}`} onClick={toggleIsShow}>
                 <div className={isShow ? `${s.faq__box} ${s.active}`: `${s.faq__box}`}>
                     <div className={s.faq__box__content}>
                         <H4>{question}</H4>
-                        <P1>{answer}</P1>
+                        <P1 onClick={(e) => e.stopPropagation()}>{answer}</P1>
                         {isShow 
-                        ?  <span onClick={toggleIsShow} className={s.faq__box__content__toggle}>+</span>
-                        :  <span onClick={toggleIsShow} className={s.faq__box__content__toggle}>&#8211;</span> }
+                        ?  <span className={s.faq__box__content__toggle}>+</span>
+                        :  <span className={s.faq__box__content__toggle}>&#8211;</span> }
                     </div>
                 </div>
             </div>

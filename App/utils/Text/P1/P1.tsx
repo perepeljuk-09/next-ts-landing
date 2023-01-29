@@ -1,12 +1,13 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, ComponentProps } from "react";
 import s from './P1.module.scss'
 
-interface IP1Props {
-    children: ReactNode
-}
+type IP1Props = {
+    children: ReactNode;
 
-const P1: React.FC<IP1Props> = ({children}) => {
-    return <p className={s.text}>{children}</p>
+} & ComponentProps<'p'>
+
+const P1: React.FC<IP1Props> = ({children, onClick}) => {
+    return <p className={s.text} onClick={onClick}>{children}</p>
 }
 
 export {P1};
