@@ -23,7 +23,7 @@
         list-style-type: none;
         color: $color-text-40;
     }
-}
-.menu.active {
-    transform: translateY(0);
+    &.active {
+        transform: translateY(0);
+    }
 }

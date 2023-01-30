@@ -1,13 +1,11 @@
 @import '../../../styles/variables.module.scss';
+@import '../../../styles//mixins';
 
 .btn {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+    @include text(20px, 24px, 500, $font-Secondary, $color-btn-Primary);
+
     text-align: center;
     padding: 24px 0;
-    color: $color-btn-Primary;
-    font-family: $font-Secondary;
     border-radius: 8px;
     max-width: 288px;
     width: 100%;

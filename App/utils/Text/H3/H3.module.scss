@@ -1,11 +1,8 @@
 @import "../../../../styles/variables.module.scss";
+@import "../../../../styles/mixins";
 
 .h3__title {
-    font-size: 32px;
-    line-height: 38px;
-    font-weight: 600;
-    font-family: $font-Primary;
-    color: $color-white;
+    @include text(32px, 38px, 600, $font-Primary, $color-white);
 }
 
 @media only screen and (max-width: 1200px) {

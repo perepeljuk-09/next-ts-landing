@@ -1,11 +1,8 @@
 @import "../../../../styles/variables.module.scss";
+@import "../../../../styles/mixins";
 
 .h2__title {
-    font-size: 72px;
-    line-height: 86px;
-    font-weight: 600;
-    font-family: $font-Primary;
-    color: $color-white;
+    @include text(72px, 86px, 600, $font-Primary, $color-white);
     max-width: 641px;
     text-align: center;
     margin: 0 auto;
